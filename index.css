@@ -131,18 +131,6 @@ h1 {
 :root {
   --iw: 576px;
   --gap: 64px;
-  --min-ipr: 4;
-  --max-ipr: 2;
-  --minw: calc((100% - (var(--min-ipr) - 1) * var(--gap)) / var(--min-ipr));
-  --maxw: calc((100% - (var(--max-ipr) - 1) * var(--gap)) / var(--max-ipr));
-  --full: calc((900px - 100%) * 999);
-
-  --dots: 3;
-  --dotSize: 1;
-  --dotMargin: 0.5;
-  --duration: 0.3s;
-  --timing-ease: cubic-bezier(0.51, 0.92, 0.24, 1);
-  --timing-bounce: cubic-bezier(0.51, 0.92, 0.24, 1.15);
 }
 .awards {
   font-family: "Noto Sans JP";
