@@ -1,52 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <title>Document</title>
-</head>
-<body>
-  <!-- header -->
-  <header class="header"></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header"></header>
 
-  <!-- top -->
-  <section class="top">
-    <div class="top__video-box overlay">
-      <video class="top__video" muted autoplay loop playsinline>
-        <source src="./videos/mv_1.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="top__text-box">
-      <h1>AndLaw<br>誰にでも法律の行き届く社会へ</h1>
-    </div>
-  </section>
+    <!-- top -->
+    <section class="top">
+      <div class="top__video-box overlay">
+        <video class="top__video" muted autoplay loop playsinline>
+          <source src="./videos/mv_1.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="top__text-box">
+        <h1>AndLaw<br />誰にでも法律の行き届く社会へ</h1>
+      </div>
+    </section>
 
-  <!-- news -->
-  <section class="news"></section>
+    <!-- news -->
+    <section class="news"></section>
 
-  <!-- mission and vision -->
-  <section class="mission-vision"></section>
+    <!-- mission and vision -->
+    <section class="mission-vision"></section>
 
-  <!-- service -->
-  <section class="service"></section>
+    <!-- service -->
+    <section class="service"></section>
 
-  <!-- members -->
-  <section class="members"></section>
+    <!-- members -->
+    <section class="members">
+      <h2>MEMBERS</h2>
+      <div class="container">
+        <div class="row members__each-member">
+          <!-- left column -->
+          <div class="col-sm members__left-col">
+            <img
+              src="./images/katogoki.png"
+              alt="kato_goki_portrait"
+              class="members__left-col"
+            />
+          </div>
+          <!-- right column -->
+          <div class="col-sm">
+            <div class="members__right-col">
+              <p class="memebers__position-title">CEO 代表取締役</p>
+              <h3>加藤 豪輝</h3>
+              <p class="members__position-description">
+                2017年大学一年時より、飲食店の個人事業主として活動を始める。2019年12年より、学生を中心としたテックコミュニティであるAdachi.incを共同設立し、10名程のメンバーと共にアプリ開発を行う。2021年10月にAndLaw株式会社を取締役足立と設立し、代表取締役を務める。自身の専攻分野である法情報学と、ITサービス開発という二つのバックグラウンドを活かし、リーガルテックサービスの全般の開発や、経営を行う。名古屋大学法学部法律政治学科在学。
+              </p>
+              <a href="" target="_blank" class="memebers__social-media"
+                >noteやtwitterアカウントのurlが入ります。</a
+              >
+              <br />
+              <a href="" target="_blank" class="memebers__social-media"
+                >noteやtwitterアカウントのurlが入ります。</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row members__each-member">
+          <!-- left column -->
+          <div class="col-sm members__left-col">
+            <img src="./images/adachitomoki.png" alt="adachi_tomoki_portrait" />
+          </div>
+          <!-- right column -->
+          <div class="col-sm">
+            <div class="members__right-col">
+              <p class="memebers__position-title">CTO 取締役</p>
+              <h3>足立 智紀</h3>
+              <p class="members__position-description">
+                大学在学中にプログラミングを学び、東京のIT系ベンチャーでのインターンを経て2021年に代表の加藤と共にAndLaw株式会社を創業。過去にSNSの管理を行うWebアプリ「Hamtter」や気軽に就活を管理できるスマホアプリ「Jobhun」の開発に従事。豊富な開発経験と法学部のバックグラウンドを生かしてAndLawのリーガルテックサービスを技術面から支えていく。名古屋大学法学部法律政治学科在学。
+              </p>
+              <a
+                href="tomoki@twitter.com"
+                target="_blank"
+                class="memebers__social-media"
+                >tomoki@twitter.com</a
+              >
+              <br />
+              <a href="" target="_blank" class="memebers__social-media"
+                >noteやtwitterアカウントのurlが入ります。</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- awards -->
-  <section class="awards"></section>
+    <!-- awards -->
+    <section class="awards">
+      <section class="awards">
+        <h2>AWARDS</h2>
+        <div class="awards__carousel">
+          <div class="awards__first awards__carousel-item">
+            <img src="./images/business-award1.png" alt="Card image cap" />
+            <p>
+              2021年9月18日（土）に行われたAICHI-STARTUPビジネスプランコンテスト2021で奨励賞を頂きました！
+            </p>
+          </div>
+          <div class="awards__carousel-item">
+            <img src="./images/business-award2.png" alt="Card image cap" />
+            <p>
+              2021年6月12日（土）に行われたTongaliビジネスプランコンテスト2021でサポーター賞を頂きました！
+            </p>
+          </div>
+          <div class="awards__carousel-item">
+            <img src="./images/business-award1.png" alt="Card image cap" />
+            <p>
+              2021年9月18日（土）に行われたAICHI-STARTUPビジネスプランコンテスト2021で奨励賞を頂きました！
+            </p>
+          </div>
+        </div>
+        <div class="awards__carousel__slider-dots">
+          <a href="" class="awards__slider-dot dot1"></a>
+          <a href="" class="awards__slider-dot dot2"></a>
+          <a href="" class="awards__slider-dot dot3"></a>
+        </div>
+    </section>
 
-  <!-- company -->
-  <section class="company"></section>
+    <!-- company -->
+    <section class="company"></section>
 
-  <!-- contact -->
-  <section class="contact"></section>
+    <!-- contact -->
+    <section class="contact"></section>
 
-  <!-- footer -->
-  <footer class="footer"></footer>
+    <!-- footer -->
+    <footer class="footer"></footer>
 
-  <script src="./index.js"></script>
-</body>
+    <script src="./index.js"></script>
+  </body>
 </html>

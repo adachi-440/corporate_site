@@ -73,10 +73,155 @@ h1 {
 
 /* members */
 .members {
+  font-family: "Noto Sans JP";
+}
+.members h2 {
+  text-align: center;
+  color: #fe8e3c;
+  margin-bottom: 72px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.members h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.members img {
+  border-radius: 8px;
+}
+.memebers__position-title {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.members__position-description {
+  margin-bottom: 40px;
+}
+.memebers__social-media {
+  color: #61bacd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.memebers__social-media:hover {
+  color: #fe8e3c;
+  text-decoration: none;
+}
+.members__each-member {
+  margin-bottom: 96px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-sm {
+  margin: 0;
+  padding: 0;
+}
+.members__left-col {
+  box-sizing: border-box;
+  align-items: right;
+  /* padding-right: 94px;
+  margin: 0;
+  width: 624px; */
+}
+.members__right-col {
+  position: relative;
+  left: -15px;
 }
 
 /* awards */
+:root {
+  --iw: 576px;
+  --gap: 64px;
+  --min-ipr: 4;
+  --max-ipr: 2;
+  --minw: calc((100% - (var(--min-ipr) - 1) * var(--gap)) / var(--min-ipr));
+  --maxw: calc((100% - (var(--max-ipr) - 1) * var(--gap)) / var(--max-ipr));
+  --full: calc((900px - 100%) * 999);
+
+  --dots: 3;
+  --dotSize: 1;
+  --dotMargin: 0.5;
+  --duration: 0.3s;
+  --timing-ease: cubic-bezier(0.51, 0.92, 0.24, 1);
+  --timing-bounce: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
 .awards {
+  font-family: "Noto Sans JP";
+  background-color: #f1f1f1;
+}
+.awards h2 {
+  text-align: center;
+  color: #fe8e3c;
+  padding-bottom: 72px;
+  background-color: white;
+  font-weight: 900;
+}
+.awards__carousel {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-top: 80px;
+  padding-bottom: 53px;
+
+  /* Mouse Drag */
+  cursor: grab;
+  /* hide scrollbar */
+  scrollbar-width: 0;
+}
+.awards__carousel::-webkit-scrollbar {
+  width: 0;
+}
+.awards__first {
+  margin-left: 56px;
+}
+.awards__carousel-item {
+  /* make sure the width is honored */
+  /* flexbasis = width of the card */
+  flex-basis: var(--iw);
+  flex-shrink: 0;
+  position: relative;
+  width: 576px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 5px 20px #8a7575;
+
+  counter-increment: number;
+}
+.awards__carousel-item:active {
+  /* Mouse Drag */
+  cursor: grabbing;
+}
+.awards__carousel div:last-child {
+  margin-right: 432px;
+}
+.awards__carousel-item p {
+  padding: 28px 48px;
+}
+.awards__carousel-item + .awards__carousel-item {
+  margin-left: var(--gap);
+}
+.awards__carousel__slider-dots {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 41px;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 32px;
+}
+.awards__slider-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 4px;
+  background-color: #61bacd;
+  border-radius: 50%;
+}
+.dot-active {
+  background-color: #fe8e3c;
+  transform: scale(1.3);
+  transition: 0.3s;
 }
 
 /* company */
@@ -89,6 +234,27 @@ h1 {
 
 /* footer */
 .footer {
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .members__right-col {
+    left: 15px;
+  }
+}
+/* Membersのレスポンシブ対応用 */
+@media (max-width: 991px) {
+  .members__position-description {
+    min-width: 430px;
+  }
+  .members__right-col {
+    margin: auto;
+    left: 0px;
+    width: 530px;
+    padding-top: 32px;
+  }
+  .members__left-col {
+    text-align: center;
+  }
 }
 
 /* 狭いディスプレイorタブレットサイズ */
