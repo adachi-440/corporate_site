@@ -46,7 +46,7 @@ slider.addEventListener('scroll', e =>{
         dot1.classList.add('dot-active');
         dot2.classList.remove('dot-active');
         dot3.classList.remove('dot-active');
-    }else if(startPos < slider.scrollLeft && slider.scrollLeft <= startPos+slideWidth){
+    }else if(startPos < slider.scrollLeft && slider.scrollLeft <= startPos+slideWidth*2/3){
         dot1.classList.remove('dot-active');
         dot2.classList.add('dot-active');
         dot3.classList.remove('dot-active');

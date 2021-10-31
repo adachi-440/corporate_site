@@ -89,6 +89,8 @@ h1 {
 }
 .members img {
   border-radius: 8px;
+  width: 100%;
+  max-width: 530px;
 }
 .memebers__position-title {
   font-size: 12px;
@@ -117,10 +119,6 @@ h1 {
 }
 .members__left-col {
   box-sizing: border-box;
-  align-items: right;
-  /* padding-right: 94px;
-  margin: 0;
-  width: 624px; */
 }
 .members__right-col {
   position: relative;
@@ -168,19 +166,21 @@ h1 {
   flex-shrink: 0;
   position: relative;
   width: 576px;
-  height: 450px;
   background-color: #fff;
   border-radius: 0 0 8px 8px;
   box-shadow: 0px 5px 20px #8a7575;
 
   counter-increment: number;
 }
+.awards__carousel-item img {
+  width: 100%;
+}
 .awards__carousel-item:active {
   /* Mouse Drag */
   cursor: grabbing;
 }
 .awards__carousel div:last-child {
-  margin-right: 432px;
+  margin-right: 30vw;
 }
 .awards__carousel-item p {
   padding: 28px 48px;
@@ -223,25 +223,39 @@ h1 {
 /* footer */
 .footer {
 }
-
+@media (min-width: 1400px) {
+  .members__left-col {
+    justify-content: center;
+    position: relative;
+    left: 15px;
+  }
+}
+/* Membersのレスポンシブ対応用 */
 @media (max-width: 1199px) and (min-width: 992px) {
   .members__right-col {
     left: 15px;
+  }
+  .awards__carousel-item {
+    flex-shrink: 0.135;
+  }
+  .awards__first {
+    margin-left: 0px;
   }
 }
 /* Membersのレスポンシブ対応用 */
 @media (max-width: 991px) {
   .members__position-description {
-    min-width: 430px;
+    /* min-width: 430px; */
   }
   .members__right-col {
     margin: auto;
-    left: 0px;
-    width: 530px;
-    padding-top: 32px;
+    left: 15px;
   }
   .members__left-col {
     text-align: center;
+  }
+  .awards__carousel-item {
+    flex-shrink: 0.135;
   }
 }
 
@@ -251,4 +265,18 @@ h1 {
 
 /* スマホサイズ */
 @media (max-width: 767px) {
+  /* Membersのレスポンシブ対応用 */
+  .members__right-col {
+    left: 0px;
+    padding-top: 32px;
+  }
+  .awards__carousel-item {
+    flex-shrink: 0.135;
+  }
+  .awards__first {
+    margin-left: 0px;
+  }
+  .awards__carousel div:last-child {
+    margin-right: 0vw;
+  }
 }
