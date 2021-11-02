@@ -72,19 +72,17 @@ h1 {
 
 /* mission-and-vision */
 .mission-vision-gradient {
-    position: relative;
-    overflow: hidden;
+    background-image:url("./images/Gradient.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .mission-vision-text {
-    position: absolute;
-    top: 180%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    height: 70vh;
+    padding-top: 8%;
 }
 
 .mission-vision h2 {

@@ -49,32 +49,17 @@
     <section class="news"></section>
 
     <!-- mission and vision -->
-    <section class="mission-vision">
-        <canvas id="cv2" class="mission-vision-gradient" style="transform: skewY(5deg);
-        transform-origin: top right; margin-top: 10%;"></canvas>
-        <script>
-            var width = document.documentElement.clientWidth;
-            var canvas = document.getElementById('cv2');
-            canvas.width = width;
-            canvas.height = 400;
-
-            var ctx2 = document.getElementById("cv2").getContext("2d");
-            var g = ctx2.createLinearGradient(0, 100, width, 400);
-            g.addColorStop(0, 'rgb(97,186,205,0.2)');
-            g.addColorStop(0.5, 'rgb(254,142,60,0.3)');
-            g.addColorStop(1, 'rgb(97,186,205,1)');
-            ctx2.fillStyle = g;
-            ctx2.fillRect(0, 100, width, 400);
-        </script>
-
-        <a id="mission-vision">
-            <div class="mission-vision-text">
-                <h2>MISSION</h2>
-                <h3>ITで人の可能性を広げる</h3>
-                <h2>VISION</h2>
-                <h3>誰にでも法律の行き届く社会へ</h3>
-            </div>
-        </a>
+    <div class="mission-vision-gradient">
+        <section class="mission-vision">
+            <a id="mission-vision">
+                <div class="mission-vision-text">
+                    <h2>MISSION</h2>
+                    <h3>ITで人の可能性を広げる</h3>
+                    <h2>VISION</h2>
+                    <h3>誰にでも法律の行き届く社会へ</h3>
+                </div>
+            </a>
+    </div>
     </section>
 
     <!-- service -->
