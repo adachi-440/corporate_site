@@ -69,6 +69,38 @@ h1 {
 
 /* service */
 .service {
+  margin-bottom: 168px;
+}
+.service h2 {
+  text-align: center;
+  color: #fe8e3c;
+  margin-bottom: 72px;
+  font-weight: 800;
+  letter-spacing: 0px;
+}
+.service h3 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+.service p {
+  margin-bottom: 0rem;
+}
+.service img {
+  border-radius: 8px;
+  width: 100%;
+  max-width: 559.22px;
+  position: relative;
+  right: 15px;
+}
+.service__position-title {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.service__right-col {
+  position: relative;
+  left: -15px;
+  padding-top: 8px;
 }
 
 /* members */
@@ -229,9 +261,18 @@ h1 {
     position: relative;
     left: 15px;
   }
+  .service img {
+    right: -45px;
+  }
 }
-/* Membersのレスポンシブ対応用 */
+/* Service, Membersのレスポンシブ対応用 */
 @media (max-width: 1199px) and (min-width: 992px) {
+  .service__right-col {
+    left: 15px;
+  }
+  .service img {
+    right: 0px;
+  }
   .members__right-col {
     left: 15px;
   }
@@ -242,8 +283,15 @@ h1 {
     margin-left: 0px;
   }
 }
-/* Membersのレスポンシブ対応用 */
+/* Service, Membersのレスポンシブ対応用 */
 @media (max-width: 991px) {
+  .service__right-col {
+    margin: auto;
+    left: 15px;
+  }
+  .service img {
+    left: 0px;
+  }
   .members__position-description {
     /* min-width: 430px; */
   }
@@ -265,6 +313,13 @@ h1 {
 
 /* スマホサイズ */
 @media (max-width: 767px) {
+  .service img {
+    right: 0px;
+  }
+  .service__right-col {
+    left: 0px;
+    padding-top: 32px;
+  }
   /* Membersのレスポンシブ対応用 */
   .members__right-col {
     left: 0px;
