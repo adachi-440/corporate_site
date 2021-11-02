@@ -16,8 +16,15 @@ h1 {
 
 /* header */
 
-.header {}
+.navbar {
+    margin: 0 auto;
+    max-width: 1140;
+    background-color: #ffffff;
+}
 
+.nav-item {
+    margin-left: 20px;
+}
 
 /* top */
 

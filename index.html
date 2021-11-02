@@ -13,20 +13,38 @@
 <body>
     <!-- header -->
     <header class="header sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#top"><img src="./images/logo.png" alt="&Law" title="&Law"></a>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">NEWS</a>
+        <nav class="navbar navbar-light navbar-expand-lg ">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" class="logo-img">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#responsiveMenu"
+                aria-controls="responsiveMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="responsiveMenu">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#news">NEWS</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link active" href="#mission-vision">MISSION</a>
-                        <a class="nav-link active" href="#">SERVICE</a>
-                        <a class="nav-link active" href="#">MEMBER</a>
-                        <a class="nav-link active" href="#">AWARDS</a>
-                        <a class="nav-link active" href="#">COMPANY</a>
-                        <a class="nav-link active" href="#">CONTACT</a>
-                    </div>
-                </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#service">SERVICE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#members">MEMBER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#awards">AWARDS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#company">COMPANY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -80,8 +98,15 @@
     <!-- footer -->
     <footer class="footer"></footer>
 
-    <script src="./index.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
