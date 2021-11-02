@@ -1,52 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./index.css">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
 </head>
+
 <body>
-  <!-- header -->
-  <header class="header"></header>
+    <!-- header -->
+    <header class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#top"><img src="./images/logo.png" alt="&Law" title="&Law"></a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">NEWS</a>
+                        <a class="nav-link active" href="#mission-vision">MISSION</a>
+                        <a class="nav-link active" href="#">SERVICE</a>
+                        <a class="nav-link active" href="#">MEMBER</a>
+                        <a class="nav-link active" href="#">AWARDS</a>
+                        <a class="nav-link active" href="#">COMPANY</a>
+                        <a class="nav-link active" href="#">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <!-- top -->
-  <section class="top">
-    <div class="top__video-box overlay">
-      <video class="top__video" muted autoplay loop playsinline>
-        <source src="./videos/mv_1.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="top__text-box">
-      <h1>AndLaw<br>誰にでも法律の行き届く社会へ</h1>
-    </div>
-  </section>
+    <!-- top -->
+    <section class="top">
+        <a id="top">
+            <div class="top__video-box overlay">
+                <video class="top__video" muted autoplay loop playsinline>
+                    <source src="./videos/mv_1.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="top__text-box">
+                <h1>AndLaw<br>誰にでも法律の行き届く社会へ</h1>
+            </div>
+        </a>
+    </section>
 
-  <!-- news -->
-  <section class="news"></section>
+    <!-- news -->
+    <section class="news"></section>
 
-  <!-- mission and vision -->
-  <section class="mission-vision"></section>
+    <!-- mission and vision -->
+    <section class="mission-vision">
+        <canvas id="cv2" class="mission-vision-gradient" style="transform: skewY(5deg);
+        transform-origin: top right; margin-top: 10%;"></canvas>
+        <script>
+            var width = document.documentElement.clientWidth;
+            var canvas = document.getElementById('cv2');
+            canvas.width = width;
+            canvas.height = 400;
 
-  <!-- service -->
-  <section class="service"></section>
+            var ctx2 = document.getElementById("cv2").getContext("2d");
+            var g = ctx2.createLinearGradient(0, 100, width, 400);
+            g.addColorStop(0, 'rgb(97,186,205,0.2)');
+            g.addColorStop(0.5, 'rgb(254,142,60,0.3)');
+            g.addColorStop(1, 'rgb(97,186,205,1)');
+            ctx2.fillStyle = g;
+            ctx2.fillRect(0, 100, width, 400);
+        </script>
 
-  <!-- members -->
-  <section class="members"></section>
+        <a id="mission-vision">
+            <div class="mission-vision-text">
+                <h2>MISSION</h2>
+                <h3>ITで人の可能性を広げる</h3>
+                <h2>VISION</h2>
+                <h3>誰にでも法律の行き届く社会へ</h3>
+            </div>
+        </a>
+    </section>
 
-  <!-- awards -->
-  <section class="awards"></section>
+    <!-- service -->
+    <section class="service"></section>
 
-  <!-- company -->
-  <section class="company"></section>
+    <!-- members -->
+    <section class="members"></section>
 
-  <!-- contact -->
-  <section class="contact"></section>
+    <!-- awards -->
+    <section class="awards"></section>
 
-  <!-- footer -->
-  <footer class="footer"></footer>
+    <!-- company -->
+    <section class="company"></section>
 
-  <script src="./index.js"></script>
+    <!-- contact -->
+    <section class="contact"></section>
+
+    <!-- footer -->
+    <footer class="footer"></footer>
+
+    <script src="./index.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
 </body>
+
 </html>
