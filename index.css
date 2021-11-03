@@ -313,6 +313,10 @@ h1 {
 
 /* スマホサイズ */
 @media (max-width: 767px) {
+  .service {
+    width: 90%;
+    margin: 0 auto;
+  }
   .service img {
     right: 0px;
   }
@@ -321,6 +325,11 @@ h1 {
     padding-top: 32px;
   }
   /* Membersのレスポンシブ対応用 */
+  .members {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .members__right-col {
     left: 0px;
     padding-top: 32px;
